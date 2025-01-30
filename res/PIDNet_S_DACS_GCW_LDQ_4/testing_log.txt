@@ -1,0 +1,1252 @@
+Model test file: last_1.pt
+Device: cuda
+Cuda device name: Tesla T4
+Dataset target domain: Urban
+
+Testing:
+Time: 00:01:04 s 		Test miou: 0.3223 
+
+Model parameters and FLOPs:
+| module                      | #parameters or shape   | #flops     |
+|:----------------------------|:-----------------------|:-----------|
+| model                       | 7.718M                 | 0.142T     |
+|  conv1                      |  10.272K               |  5.109G    |
+|   conv1.0                   |   0.896K               |   1.359G   |
+|    conv1.0.weight           |    (32, 3, 3, 3)       |            |
+|    conv1.0.bias             |    (32,)               |            |
+|   conv1.1                   |   64                   |   0.101G   |
+|    conv1.1.weight           |    (32,)               |            |
+|    conv1.1.bias             |    (32,)               |            |
+|   conv1.3                   |   9.248K               |   3.624G   |
+|    conv1.3.weight           |    (32, 32, 3, 3)      |            |
+|    conv1.3.bias             |    (32,)               |            |
+|   conv1.4                   |   64                   |   25.166M  |
+|    conv1.4.weight           |    (32,)               |            |
+|    conv1.4.bias             |    (32,)               |            |
+|  layer1                     |  37.12K                |  14.596G   |
+|   layer1.0                  |   18.56K               |   7.298G   |
+|    layer1.0.conv1           |    9.216K              |    3.624G  |
+|    layer1.0.bn1             |    64                  |    25.166M |
+|    layer1.0.conv2           |    9.216K              |    3.624G  |
+|    layer1.0.bn2             |    64                  |    25.166M |
+|   layer1.1                  |   18.56K               |   7.298G   |
+|    layer1.1.conv1           |    9.216K              |    3.624G  |
+|    layer1.1.bn1             |    64                  |    25.166M |
+|    layer1.1.conv2           |    9.216K              |    3.624G  |
+|    layer1.1.bn2             |    64                  |    25.166M |
+|  layer2                     |  0.132M                |  12.948G   |
+|   layer2.0                  |   57.728K              |   5.675G   |
+|    layer2.0.conv1           |    18.432K             |    1.812G  |
+|    layer2.0.bn1             |    0.128K              |    12.583M |
+|    layer2.0.conv2           |    36.864K             |    3.624G  |
+|    layer2.0.bn2             |    0.128K              |    12.583M |
+|    layer2.0.downsample      |    2.176K              |    0.214G  |
+|   layer2.1                  |   73.984K              |   7.273G   |
+|    layer2.1.conv1           |    36.864K             |    3.624G  |
+|    layer2.1.bn1             |    0.128K              |    12.583M |
+|    layer2.1.conv2           |    36.864K             |    3.624G  |
+|    layer2.1.bn2             |    0.128K              |    12.583M |
+|  layer3                     |  0.821M                |  20.177G   |
+|   layer3.0                  |   0.23M                |   5.656G   |
+|    layer3.0.conv1           |    73.728K             |    1.812G  |
+|    layer3.0.bn1             |    0.256K              |    6.291M  |
+|    layer3.0.conv2           |    0.147M              |    3.624G  |
+|    layer3.0.bn2             |    0.256K              |    6.291M  |
+|    layer3.0.downsample      |    8.448K              |    0.208G  |
+|   layer3.1                  |   0.295M               |   7.26G    |
+|    layer3.1.conv1           |    0.147M              |    3.624G  |
+|    layer3.1.bn1             |    0.256K              |    6.291M  |
+|    layer3.1.conv2           |    0.147M              |    3.624G  |
+|    layer3.1.bn2             |    0.256K              |    6.291M  |
+|   layer3.2                  |   0.295M               |   7.26G    |
+|    layer3.2.conv1           |    0.147M              |    3.624G  |
+|    layer3.2.bn1             |    0.256K              |    6.291M  |
+|    layer3.2.conv2           |    0.147M              |    3.624G  |
+|    layer3.2.bn2             |    0.256K              |    6.291M  |
+|  layer4                     |  3.28M                 |  20.155G   |
+|   layer4.0                  |   0.919M               |   5.647G   |
+|    layer4.0.conv1           |    0.295M              |    1.812G  |
+|    layer4.0.bn1             |    0.512K              |    3.146M  |
+|    layer4.0.conv2           |    0.59M               |    3.624G  |
+|    layer4.0.bn2             |    0.512K              |    3.146M  |
+|    layer4.0.downsample      |    33.28K              |    0.204G  |
+|   layer4.1                  |   1.181M               |   7.254G   |
+|    layer4.1.conv1           |    0.59M               |    3.624G  |
+|    layer4.1.bn1             |    0.512K              |    3.146M  |
+|    layer4.1.conv2           |    0.59M               |    3.624G  |
+|    layer4.1.bn2             |    0.512K              |    3.146M  |
+|   layer4.2                  |   1.181M               |   7.254G   |
+|    layer4.2.conv1           |    0.59M               |    3.624G  |
+|    layer4.2.bn1             |    0.512K              |    3.146M  |
+|    layer4.2.conv2           |    0.59M               |    3.624G  |
+|    layer4.2.bn2             |    0.512K              |    3.146M  |
+|  layer5                     |  1.775M                |  3.03G     |
+|   layer5.0                  |   0.921M               |   1.718G   |
+|    layer5.0.conv1           |    65.536K             |    0.403G  |
+|    layer5.0.bn1             |    0.512K              |    3.146M  |
+|    layer5.0.conv2           |    0.59M               |    0.906G  |
+|    layer5.0.bn2             |    0.512K              |    0.786M  |
+|    layer5.0.conv3           |    0.131M              |    0.201G  |
+|    layer5.0.bn3             |    1.024K              |    1.573M  |
+|    layer5.0.downsample      |    0.132M              |    0.203G  |
+|   layer5.1                  |   0.854M               |   1.312G   |
+|    layer5.1.conv1           |    0.131M              |    0.201G  |
+|    layer5.1.bn1             |    0.512K              |    0.786M  |
+|    layer5.1.conv2           |    0.59M               |    0.906G  |
+|    layer5.1.bn2             |    0.512K              |    0.786M  |
+|    layer5.1.conv3           |    0.131M              |    0.201G  |
+|    layer5.1.bn3             |    1.024K              |    1.573M  |
+|  compression3               |  8.32K                 |  0.204G    |
+|   compression3.0            |   8.192K               |   0.201G   |
+|    compression3.0.weight    |    (64, 128, 1, 1)     |            |
+|   compression3.1            |   0.128K               |   3.146M   |
+|    compression3.1.weight    |    (64,)               |            |
+|    compression3.1.bias      |    (64,)               |            |
+|  compression4               |  16.512K               |  0.101G    |
+|   compression4.0            |   16.384K              |   0.101G   |
+|    compression4.0.weight    |    (64, 256, 1, 1)     |            |
+|   compression4.1            |   0.128K               |   0.786M   |
+|    compression4.1.weight    |    (64,)               |            |
+|    compression4.1.bias      |    (64,)               |            |
+|  pag3                       |  4.224K                |  0.297G    |
+|   pag3.f_x                  |   2.112K               |   0.208G   |
+|    pag3.f_x.0               |    2.048K              |    0.201G  |
+|    pag3.f_x.1               |    64                  |    6.291M  |
+|   pag3.f_y                  |   2.112K               |   51.905M  |
+|    pag3.f_y.0               |    2.048K              |    50.332M |
+|    pag3.f_y.1               |    64                  |    1.573M  |
+|  pag4                       |  4.224K                |  0.258G    |
+|   pag4.f_x                  |   2.112K               |   0.208G   |
+|    pag4.f_x.0               |    2.048K              |    0.201G  |
+|    pag4.f_x.1               |    64                  |    6.291M  |
+|   pag4.f_y                  |   2.112K               |   12.976M  |
+|    pag4.f_y.0               |    2.048K              |    12.583M |
+|    pag4.f_y.1               |    64                  |    0.393M  |
+|  layer3_                    |  0.148M                |  14.546G   |
+|   layer3_.0                 |   73.984K              |   7.273G   |
+|    layer3_.0.conv1          |    36.864K             |    3.624G  |
+|    layer3_.0.bn1            |    0.128K              |    12.583M |
+|    layer3_.0.conv2          |    36.864K             |    3.624G  |
+|    layer3_.0.bn2            |    0.128K              |    12.583M |
+|   layer3_.1                 |   73.984K              |   7.273G   |
+|    layer3_.1.conv1          |    36.864K             |    3.624G  |
+|    layer3_.1.bn1            |    0.128K              |    12.583M |
+|    layer3_.1.conv2          |    36.864K             |    3.624G  |
+|    layer3_.1.bn2            |    0.128K              |    12.583M |
+|  layer4_                    |  0.148M                |  14.546G   |
+|   layer4_.0                 |   73.984K              |   7.273G   |
+|    layer4_.0.conv1          |    36.864K             |    3.624G  |
+|    layer4_.0.bn1            |    0.128K              |    12.583M |
+|    layer4_.0.conv2          |    36.864K             |    3.624G  |
+|    layer4_.0.bn2            |    0.128K              |    12.583M |
+|   layer4_.1                 |   73.984K              |   7.273G   |
+|    layer4_.1.conv1          |    36.864K             |    3.624G  |
+|    layer4_.1.bn1            |    0.128K              |    12.583M |
+|    layer4_.1.conv2          |    36.864K             |    3.624G  |
+|    layer4_.1.bn2            |    0.128K              |    12.583M |
+|  layer5_.0                  |  58.112K               |  5.713G    |
+|   layer5_.0.conv1           |   4.096K               |   0.403G   |
+|    layer5_.0.conv1.weight   |    (64, 64, 1, 1)      |            |
+|   layer5_.0.bn1             |   0.128K               |   12.583M  |
+|    layer5_.0.bn1.weight     |    (64,)               |            |
+|    layer5_.0.bn1.bias       |    (64,)               |            |
+|   layer5_.0.conv2           |   36.864K              |   3.624G   |
+|    layer5_.0.conv2.weight   |    (64, 64, 3, 3)      |            |
+|   layer5_.0.bn2             |   0.128K               |   12.583M  |
+|    layer5_.0.bn2.weight     |    (64,)               |            |
+|    layer5_.0.bn2.bias       |    (64,)               |            |
+|   layer5_.0.conv3           |   8.192K               |   0.805G   |
+|    layer5_.0.conv3.weight   |    (128, 64, 1, 1)     |            |
+|   layer5_.0.bn3             |   0.256K               |   25.166M  |
+|    layer5_.0.bn3.weight     |    (128,)              |            |
+|    layer5_.0.bn3.bias       |    (128,)              |            |
+|   layer5_.0.downsample      |   8.448K               |   0.83G    |
+|    layer5_.0.downsample.0   |    8.192K              |    0.805G  |
+|    layer5_.0.downsample.1   |    0.256K              |    25.166M |
+|  layer3_d                   |  29.888K               |  2.938G    |
+|   layer3_d.conv1            |   18.432K              |   1.812G   |
+|    layer3_d.conv1.weight    |    (32, 64, 3, 3)      |            |
+|   layer3_d.bn1              |   64                   |   6.291M   |
+|    layer3_d.bn1.weight      |    (32,)               |            |
+|    layer3_d.bn1.bias        |    (32,)               |            |
+|   layer3_d.conv2            |   9.216K               |   0.906G   |
+|    layer3_d.conv2.weight    |    (32, 32, 3, 3)      |            |
+|   layer3_d.bn2              |   64                   |   6.291M   |
+|    layer3_d.bn2.weight      |    (32,)               |            |
+|    layer3_d.bn2.bias        |    (32,)               |            |
+|   layer3_d.downsample       |   2.112K               |   0.208G   |
+|    layer3_d.downsample.0    |    2.048K              |    0.201G  |
+|    layer3_d.downsample.1    |    64                  |    6.291M  |
+|  layer4_d.0                 |  14.72K                |  1.447G    |
+|   layer4_d.0.conv1          |   1.024K               |   0.101G   |
+|    layer4_d.0.conv1.weight  |    (32, 32, 1, 1)      |            |
+|   layer4_d.0.bn1            |   64                   |   6.291M   |
+|    layer4_d.0.bn1.weight    |    (32,)               |            |
+|    layer4_d.0.bn1.bias      |    (32,)               |            |
+|   layer4_d.0.conv2          |   9.216K               |   0.906G   |
+|    layer4_d.0.conv2.weight  |    (32, 32, 3, 3)      |            |
+|   layer4_d.0.bn2            |   64                   |   6.291M   |
+|    layer4_d.0.bn2.weight    |    (32,)               |            |
+|    layer4_d.0.bn2.bias      |    (32,)               |            |
+|   layer4_d.0.conv3          |   2.048K               |   0.201G   |
+|    layer4_d.0.conv3.weight  |    (64, 32, 1, 1)      |            |
+|   layer4_d.0.bn3            |   0.128K               |   12.583M  |
+|    layer4_d.0.bn3.weight    |    (64,)               |            |
+|    layer4_d.0.bn3.bias      |    (64,)               |            |
+|   layer4_d.0.downsample     |   2.176K               |   0.214G   |
+|    layer4_d.0.downsample.0  |    2.048K              |    0.201G  |
+|    layer4_d.0.downsample.1  |    0.128K              |    12.583M |
+|  diff3                      |  36.928K               |  0.908G    |
+|   diff3.0                   |   36.864K              |   0.906G   |
+|    diff3.0.weight           |    (32, 128, 3, 3)     |            |
+|   diff3.1                   |   64                   |   1.573M   |
+|    diff3.1.weight           |    (32,)               |            |
+|    diff3.1.bias             |    (32,)               |            |
+|  diff4                      |  0.148M                |  0.907G    |
+|   diff4.0                   |   0.147M               |   0.906G   |
+|    diff4.0.weight           |    (64, 256, 3, 3)     |            |
+|   diff4.1                   |   0.128K               |   0.786M   |
+|    diff4.1.weight           |    (64,)               |            |
+|    diff4.1.bias             |    (64,)               |            |
+|  spp                        |  0.712M                |  0.815G    |
+|   spp.scale1                |   50.176K              |   19.268M  |
+|    spp.scale1.1             |    1.024K              |    0.393M  |
+|    spp.scale1.3             |    49.152K             |    18.874M |
+|   spp.scale2                |   50.176K              |   4.817M   |
+|    spp.scale2.1             |    1.024K              |    98.304K |
+|    spp.scale2.3             |    49.152K             |    4.719M  |
+|   spp.scale3                |   50.176K              |   1.204M   |
+|    spp.scale3.1             |    1.024K              |    24.576K |
+|    spp.scale3.3             |    49.152K             |    1.18M   |
+|   spp.scale4                |   50.176K              |   1.087M   |
+|    spp.scale4.1             |    1.024K              |    6.144K  |
+|    spp.scale4.3             |    49.152K             |    0.295M  |
+|    spp.scale4.0             |                        |    0.786M  |
+|   spp.scale0                |   50.176K              |   77.07M   |
+|    spp.scale0.0             |    1.024K              |    1.573M  |
+|    spp.scale0.2             |    49.152K             |    75.497M |
+|   spp.scale_process         |   0.333M               |   0.511G   |
+|    spp.scale_process.0      |    0.768K              |    1.18M   |
+|    spp.scale_process.2      |    0.332M              |    0.51G   |
+|   spp.compression           |   62.4K                |   95.846M  |
+|    spp.compression.0        |    0.96K               |    1.475M  |
+|    spp.compression.2        |    61.44K              |    94.372M |
+|   spp.shortcut              |   66.56K               |   0.102G   |
+|    spp.shortcut.0           |    1.024K              |    1.573M  |
+|    spp.shortcut.2           |    65.536K             |    0.101G  |
+|  dfm                        |  33.28K                |  3.272G    |
+|   dfm.conv_p                |   16.64K               |   1.636G   |
+|    dfm.conv_p.0             |    16.384K             |    1.611G  |
+|    dfm.conv_p.1             |    0.256K              |    25.166M |
+|   dfm.conv_i                |   16.64K               |   1.636G   |
+|    dfm.conv_i.0             |    16.384K             |    1.611G  |
+|    dfm.conv_i.1             |    0.256K              |    25.166M |
+|  layer5_d.0                 |  58.112K               |  5.713G    |
+|   layer5_d.0.conv1          |   4.096K               |   0.403G   |
+|    layer5_d.0.conv1.weight  |    (64, 64, 1, 1)      |            |
+|   layer5_d.0.bn1            |   0.128K               |   12.583M  |
+|    layer5_d.0.bn1.weight    |    (64,)               |            |
+|    layer5_d.0.bn1.bias      |    (64,)               |            |
+|   layer5_d.0.conv2          |   36.864K              |   3.624G   |
+|    layer5_d.0.conv2.weight  |    (64, 64, 3, 3)      |            |
+|   layer5_d.0.bn2            |   0.128K               |   12.583M  |
+|    layer5_d.0.bn2.weight    |    (64,)               |            |
+|    layer5_d.0.bn2.bias      |    (64,)               |            |
+|   layer5_d.0.conv3          |   8.192K               |   0.805G   |
+|    layer5_d.0.conv3.weight  |    (128, 64, 1, 1)     |            |
+|   layer5_d.0.bn3            |   0.256K               |   25.166M  |
+|    layer5_d.0.bn3.weight    |    (128,)              |            |
+|    layer5_d.0.bn3.bias      |    (128,)              |            |
+|   layer5_d.0.downsample     |   8.448K               |   0.83G    |
+|    layer5_d.0.downsample.0  |    8.192K              |    0.805G  |
+|    layer5_d.0.downsample.1  |    0.256K              |    25.166M |
+|  seghead_p                  |  75.015K               |            |
+|   seghead_p.bn1             |   0.128K               |            |
+|    seghead_p.bn1.weight     |    (64,)               |            |
+|    seghead_p.bn1.bias       |    (64,)               |            |
+|   seghead_p.conv1           |   73.728K              |            |
+|    seghead_p.conv1.weight   |    (128, 64, 3, 3)     |            |
+|   seghead_p.bn2             |   0.256K               |            |
+|    seghead_p.bn2.weight     |    (128,)              |            |
+|    seghead_p.bn2.bias       |    (128,)              |            |
+|   seghead_p.conv2           |   0.903K               |            |
+|    seghead_p.conv2.weight   |    (7, 128, 1, 1)      |            |
+|    seghead_p.conv2.bias     |    (7,)                |            |
+|  seghead_d                  |  18.657K               |            |
+|   seghead_d.bn1             |   0.128K               |            |
+|    seghead_d.bn1.weight     |    (64,)               |            |
+|    seghead_d.bn1.bias       |    (64,)               |            |
+|   seghead_d.conv1           |   18.432K              |            |
+|    seghead_d.conv1.weight   |    (32, 64, 3, 3)      |            |
+|   seghead_d.bn2             |   64                   |            |
+|    seghead_d.bn2.weight     |    (32,)               |            |
+|    seghead_d.bn2.bias       |    (32,)               |            |
+|   seghead_d.conv2           |   33                   |            |
+|    seghead_d.conv2.weight   |    (1, 32, 1, 1)       |            |
+|    seghead_d.conv2.bias     |    (1,)                |            |
+|  final_layer                |  0.149M                |  14.634G   |
+|   final_layer.bn1           |   0.256K               |   25.166M  |
+|    final_layer.bn1.weight   |    (128,)              |            |
+|    final_layer.bn1.bias     |    (128,)              |            |
+|   final_layer.conv1         |   0.147M               |   14.496G  |
+|    final_layer.conv1.weight |    (128, 128, 3, 3)    |            |
+|   final_layer.bn2           |   0.256K               |   25.166M  |
+|    final_layer.bn2.weight   |    (128,)              |            |
+|    final_layer.bn2.bias     |    (128,)              |            |
+|   final_layer.conv2         |   0.903K               |   88.08M   |
+|    final_layer.conv2.weight |    (7, 128, 1, 1)      |            |
+|    final_layer.conv2.bias   |    (7,)                |            |
+
+Mean Intersection over Union on test images: 32.229 %
+	BACKGROUND IoU: 31.269 %
+	BUILDING IoU: 36.834 %
+	ROAD IoU: 48.757 %
+	WATER IoU: 52.016 %
+	BARREN IoU: 12.685 %
+	FOREST IoU: 38.128 %
+	AGRICULTURE IoU: 5.919 %
+
+Mean inference time: 5.459 ms
+Standard deviation of inference time: 2.415 ms
+
+________________________________________________________________________________________________________________________
+Resumed
+
+Model test file: best_0.pt
+Device: cuda
+Cuda device name: Tesla T4
+Dataset target domain: Urban
+
+Testing:
+Time: 00:01:06 s 		Test miou: 0.3234 
+
+Model parameters and FLOPs:
+| module                      | #parameters or shape   | #flops     |
+|:----------------------------|:-----------------------|:-----------|
+| model                       | 7.718M                 | 0.142T     |
+|  conv1                      |  10.272K               |  5.109G    |
+|   conv1.0                   |   0.896K               |   1.359G   |
+|    conv1.0.weight           |    (32, 3, 3, 3)       |            |
+|    conv1.0.bias             |    (32,)               |            |
+|   conv1.1                   |   64                   |   0.101G   |
+|    conv1.1.weight           |    (32,)               |            |
+|    conv1.1.bias             |    (32,)               |            |
+|   conv1.3                   |   9.248K               |   3.624G   |
+|    conv1.3.weight           |    (32, 32, 3, 3)      |            |
+|    conv1.3.bias             |    (32,)               |            |
+|   conv1.4                   |   64                   |   25.166M  |
+|    conv1.4.weight           |    (32,)               |            |
+|    conv1.4.bias             |    (32,)               |            |
+|  layer1                     |  37.12K                |  14.596G   |
+|   layer1.0                  |   18.56K               |   7.298G   |
+|    layer1.0.conv1           |    9.216K              |    3.624G  |
+|    layer1.0.bn1             |    64                  |    25.166M |
+|    layer1.0.conv2           |    9.216K              |    3.624G  |
+|    layer1.0.bn2             |    64                  |    25.166M |
+|   layer1.1                  |   18.56K               |   7.298G   |
+|    layer1.1.conv1           |    9.216K              |    3.624G  |
+|    layer1.1.bn1             |    64                  |    25.166M |
+|    layer1.1.conv2           |    9.216K              |    3.624G  |
+|    layer1.1.bn2             |    64                  |    25.166M |
+|  layer2                     |  0.132M                |  12.948G   |
+|   layer2.0                  |   57.728K              |   5.675G   |
+|    layer2.0.conv1           |    18.432K             |    1.812G  |
+|    layer2.0.bn1             |    0.128K              |    12.583M |
+|    layer2.0.conv2           |    36.864K             |    3.624G  |
+|    layer2.0.bn2             |    0.128K              |    12.583M |
+|    layer2.0.downsample      |    2.176K              |    0.214G  |
+|   layer2.1                  |   73.984K              |   7.273G   |
+|    layer2.1.conv1           |    36.864K             |    3.624G  |
+|    layer2.1.bn1             |    0.128K              |    12.583M |
+|    layer2.1.conv2           |    36.864K             |    3.624G  |
+|    layer2.1.bn2             |    0.128K              |    12.583M |
+|  layer3                     |  0.821M                |  20.177G   |
+|   layer3.0                  |   0.23M                |   5.656G   |
+|    layer3.0.conv1           |    73.728K             |    1.812G  |
+|    layer3.0.bn1             |    0.256K              |    6.291M  |
+|    layer3.0.conv2           |    0.147M              |    3.624G  |
+|    layer3.0.bn2             |    0.256K              |    6.291M  |
+|    layer3.0.downsample      |    8.448K              |    0.208G  |
+|   layer3.1                  |   0.295M               |   7.26G    |
+|    layer3.1.conv1           |    0.147M              |    3.624G  |
+|    layer3.1.bn1             |    0.256K              |    6.291M  |
+|    layer3.1.conv2           |    0.147M              |    3.624G  |
+|    layer3.1.bn2             |    0.256K              |    6.291M  |
+|   layer3.2                  |   0.295M               |   7.26G    |
+|    layer3.2.conv1           |    0.147M              |    3.624G  |
+|    layer3.2.bn1             |    0.256K              |    6.291M  |
+|    layer3.2.conv2           |    0.147M              |    3.624G  |
+|    layer3.2.bn2             |    0.256K              |    6.291M  |
+|  layer4                     |  3.28M                 |  20.155G   |
+|   layer4.0                  |   0.919M               |   5.647G   |
+|    layer4.0.conv1           |    0.295M              |    1.812G  |
+|    layer4.0.bn1             |    0.512K              |    3.146M  |
+|    layer4.0.conv2           |    0.59M               |    3.624G  |
+|    layer4.0.bn2             |    0.512K              |    3.146M  |
+|    layer4.0.downsample      |    33.28K              |    0.204G  |
+|   layer4.1                  |   1.181M               |   7.254G   |
+|    layer4.1.conv1           |    0.59M               |    3.624G  |
+|    layer4.1.bn1             |    0.512K              |    3.146M  |
+|    layer4.1.conv2           |    0.59M               |    3.624G  |
+|    layer4.1.bn2             |    0.512K              |    3.146M  |
+|   layer4.2                  |   1.181M               |   7.254G   |
+|    layer4.2.conv1           |    0.59M               |    3.624G  |
+|    layer4.2.bn1             |    0.512K              |    3.146M  |
+|    layer4.2.conv2           |    0.59M               |    3.624G  |
+|    layer4.2.bn2             |    0.512K              |    3.146M  |
+|  layer5                     |  1.775M                |  3.03G     |
+|   layer5.0                  |   0.921M               |   1.718G   |
+|    layer5.0.conv1           |    65.536K             |    0.403G  |
+|    layer5.0.bn1             |    0.512K              |    3.146M  |
+|    layer5.0.conv2           |    0.59M               |    0.906G  |
+|    layer5.0.bn2             |    0.512K              |    0.786M  |
+|    layer5.0.conv3           |    0.131M              |    0.201G  |
+|    layer5.0.bn3             |    1.024K              |    1.573M  |
+|    layer5.0.downsample      |    0.132M              |    0.203G  |
+|   layer5.1                  |   0.854M               |   1.312G   |
+|    layer5.1.conv1           |    0.131M              |    0.201G  |
+|    layer5.1.bn1             |    0.512K              |    0.786M  |
+|    layer5.1.conv2           |    0.59M               |    0.906G  |
+|    layer5.1.bn2             |    0.512K              |    0.786M  |
+|    layer5.1.conv3           |    0.131M              |    0.201G  |
+|    layer5.1.bn3             |    1.024K              |    1.573M  |
+|  compression3               |  8.32K                 |  0.204G    |
+|   compression3.0            |   8.192K               |   0.201G   |
+|    compression3.0.weight    |    (64, 128, 1, 1)     |            |
+|   compression3.1            |   0.128K               |   3.146M   |
+|    compression3.1.weight    |    (64,)               |            |
+|    compression3.1.bias      |    (64,)               |            |
+|  compression4               |  16.512K               |  0.101G    |
+|   compression4.0            |   16.384K              |   0.101G   |
+|    compression4.0.weight    |    (64, 256, 1, 1)     |            |
+|   compression4.1            |   0.128K               |   0.786M   |
+|    compression4.1.weight    |    (64,)               |            |
+|    compression4.1.bias      |    (64,)               |            |
+|  pag3                       |  4.224K                |  0.297G    |
+|   pag3.f_x                  |   2.112K               |   0.208G   |
+|    pag3.f_x.0               |    2.048K              |    0.201G  |
+|    pag3.f_x.1               |    64                  |    6.291M  |
+|   pag3.f_y                  |   2.112K               |   51.905M  |
+|    pag3.f_y.0               |    2.048K              |    50.332M |
+|    pag3.f_y.1               |    64                  |    1.573M  |
+|  pag4                       |  4.224K                |  0.258G    |
+|   pag4.f_x                  |   2.112K               |   0.208G   |
+|    pag4.f_x.0               |    2.048K              |    0.201G  |
+|    pag4.f_x.1               |    64                  |    6.291M  |
+|   pag4.f_y                  |   2.112K               |   12.976M  |
+|    pag4.f_y.0               |    2.048K              |    12.583M |
+|    pag4.f_y.1               |    64                  |    0.393M  |
+|  layer3_                    |  0.148M                |  14.546G   |
+|   layer3_.0                 |   73.984K              |   7.273G   |
+|    layer3_.0.conv1          |    36.864K             |    3.624G  |
+|    layer3_.0.bn1            |    0.128K              |    12.583M |
+|    layer3_.0.conv2          |    36.864K             |    3.624G  |
+|    layer3_.0.bn2            |    0.128K              |    12.583M |
+|   layer3_.1                 |   73.984K              |   7.273G   |
+|    layer3_.1.conv1          |    36.864K             |    3.624G  |
+|    layer3_.1.bn1            |    0.128K              |    12.583M |
+|    layer3_.1.conv2          |    36.864K             |    3.624G  |
+|    layer3_.1.bn2            |    0.128K              |    12.583M |
+|  layer4_                    |  0.148M                |  14.546G   |
+|   layer4_.0                 |   73.984K              |   7.273G   |
+|    layer4_.0.conv1          |    36.864K             |    3.624G  |
+|    layer4_.0.bn1            |    0.128K              |    12.583M |
+|    layer4_.0.conv2          |    36.864K             |    3.624G  |
+|    layer4_.0.bn2            |    0.128K              |    12.583M |
+|   layer4_.1                 |   73.984K              |   7.273G   |
+|    layer4_.1.conv1          |    36.864K             |    3.624G  |
+|    layer4_.1.bn1            |    0.128K              |    12.583M |
+|    layer4_.1.conv2          |    36.864K             |    3.624G  |
+|    layer4_.1.bn2            |    0.128K              |    12.583M |
+|  layer5_.0                  |  58.112K               |  5.713G    |
+|   layer5_.0.conv1           |   4.096K               |   0.403G   |
+|    layer5_.0.conv1.weight   |    (64, 64, 1, 1)      |            |
+|   layer5_.0.bn1             |   0.128K               |   12.583M  |
+|    layer5_.0.bn1.weight     |    (64,)               |            |
+|    layer5_.0.bn1.bias       |    (64,)               |            |
+|   layer5_.0.conv2           |   36.864K              |   3.624G   |
+|    layer5_.0.conv2.weight   |    (64, 64, 3, 3)      |            |
+|   layer5_.0.bn2             |   0.128K               |   12.583M  |
+|    layer5_.0.bn2.weight     |    (64,)               |            |
+|    layer5_.0.bn2.bias       |    (64,)               |            |
+|   layer5_.0.conv3           |   8.192K               |   0.805G   |
+|    layer5_.0.conv3.weight   |    (128, 64, 1, 1)     |            |
+|   layer5_.0.bn3             |   0.256K               |   25.166M  |
+|    layer5_.0.bn3.weight     |    (128,)              |            |
+|    layer5_.0.bn3.bias       |    (128,)              |            |
+|   layer5_.0.downsample      |   8.448K               |   0.83G    |
+|    layer5_.0.downsample.0   |    8.192K              |    0.805G  |
+|    layer5_.0.downsample.1   |    0.256K              |    25.166M |
+|  layer3_d                   |  29.888K               |  2.938G    |
+|   layer3_d.conv1            |   18.432K              |   1.812G   |
+|    layer3_d.conv1.weight    |    (32, 64, 3, 3)      |            |
+|   layer3_d.bn1              |   64                   |   6.291M   |
+|    layer3_d.bn1.weight      |    (32,)               |            |
+|    layer3_d.bn1.bias        |    (32,)               |            |
+|   layer3_d.conv2            |   9.216K               |   0.906G   |
+|    layer3_d.conv2.weight    |    (32, 32, 3, 3)      |            |
+|   layer3_d.bn2              |   64                   |   6.291M   |
+|    layer3_d.bn2.weight      |    (32,)               |            |
+|    layer3_d.bn2.bias        |    (32,)               |            |
+|   layer3_d.downsample       |   2.112K               |   0.208G   |
+|    layer3_d.downsample.0    |    2.048K              |    0.201G  |
+|    layer3_d.downsample.1    |    64                  |    6.291M  |
+|  layer4_d.0                 |  14.72K                |  1.447G    |
+|   layer4_d.0.conv1          |   1.024K               |   0.101G   |
+|    layer4_d.0.conv1.weight  |    (32, 32, 1, 1)      |            |
+|   layer4_d.0.bn1            |   64                   |   6.291M   |
+|    layer4_d.0.bn1.weight    |    (32,)               |            |
+|    layer4_d.0.bn1.bias      |    (32,)               |            |
+|   layer4_d.0.conv2          |   9.216K               |   0.906G   |
+|    layer4_d.0.conv2.weight  |    (32, 32, 3, 3)      |            |
+|   layer4_d.0.bn2            |   64                   |   6.291M   |
+|    layer4_d.0.bn2.weight    |    (32,)               |            |
+|    layer4_d.0.bn2.bias      |    (32,)               |            |
+|   layer4_d.0.conv3          |   2.048K               |   0.201G   |
+|    layer4_d.0.conv3.weight  |    (64, 32, 1, 1)      |            |
+|   layer4_d.0.bn3            |   0.128K               |   12.583M  |
+|    layer4_d.0.bn3.weight    |    (64,)               |            |
+|    layer4_d.0.bn3.bias      |    (64,)               |            |
+|   layer4_d.0.downsample     |   2.176K               |   0.214G   |
+|    layer4_d.0.downsample.0  |    2.048K              |    0.201G  |
+|    layer4_d.0.downsample.1  |    0.128K              |    12.583M |
+|  diff3                      |  36.928K               |  0.908G    |
+|   diff3.0                   |   36.864K              |   0.906G   |
+|    diff3.0.weight           |    (32, 128, 3, 3)     |            |
+|   diff3.1                   |   64                   |   1.573M   |
+|    diff3.1.weight           |    (32,)               |            |
+|    diff3.1.bias             |    (32,)               |            |
+|  diff4                      |  0.148M                |  0.907G    |
+|   diff4.0                   |   0.147M               |   0.906G   |
+|    diff4.0.weight           |    (64, 256, 3, 3)     |            |
+|   diff4.1                   |   0.128K               |   0.786M   |
+|    diff4.1.weight           |    (64,)               |            |
+|    diff4.1.bias             |    (64,)               |            |
+|  spp                        |  0.712M                |  0.815G    |
+|   spp.scale1                |   50.176K              |   19.268M  |
+|    spp.scale1.1             |    1.024K              |    0.393M  |
+|    spp.scale1.3             |    49.152K             |    18.874M |
+|   spp.scale2                |   50.176K              |   4.817M   |
+|    spp.scale2.1             |    1.024K              |    98.304K |
+|    spp.scale2.3             |    49.152K             |    4.719M  |
+|   spp.scale3                |   50.176K              |   1.204M   |
+|    spp.scale3.1             |    1.024K              |    24.576K |
+|    spp.scale3.3             |    49.152K             |    1.18M   |
+|   spp.scale4                |   50.176K              |   1.087M   |
+|    spp.scale4.1             |    1.024K              |    6.144K  |
+|    spp.scale4.3             |    49.152K             |    0.295M  |
+|    spp.scale4.0             |                        |    0.786M  |
+|   spp.scale0                |   50.176K              |   77.07M   |
+|    spp.scale0.0             |    1.024K              |    1.573M  |
+|    spp.scale0.2             |    49.152K             |    75.497M |
+|   spp.scale_process         |   0.333M               |   0.511G   |
+|    spp.scale_process.0      |    0.768K              |    1.18M   |
+|    spp.scale_process.2      |    0.332M              |    0.51G   |
+|   spp.compression           |   62.4K                |   95.846M  |
+|    spp.compression.0        |    0.96K               |    1.475M  |
+|    spp.compression.2        |    61.44K              |    94.372M |
+|   spp.shortcut              |   66.56K               |   0.102G   |
+|    spp.shortcut.0           |    1.024K              |    1.573M  |
+|    spp.shortcut.2           |    65.536K             |    0.101G  |
+|  dfm                        |  33.28K                |  3.272G    |
+|   dfm.conv_p                |   16.64K               |   1.636G   |
+|    dfm.conv_p.0             |    16.384K             |    1.611G  |
+|    dfm.conv_p.1             |    0.256K              |    25.166M |
+|   dfm.conv_i                |   16.64K               |   1.636G   |
+|    dfm.conv_i.0             |    16.384K             |    1.611G  |
+|    dfm.conv_i.1             |    0.256K              |    25.166M |
+|  layer5_d.0                 |  58.112K               |  5.713G    |
+|   layer5_d.0.conv1          |   4.096K               |   0.403G   |
+|    layer5_d.0.conv1.weight  |    (64, 64, 1, 1)      |            |
+|   layer5_d.0.bn1            |   0.128K               |   12.583M  |
+|    layer5_d.0.bn1.weight    |    (64,)               |            |
+|    layer5_d.0.bn1.bias      |    (64,)               |            |
+|   layer5_d.0.conv2          |   36.864K              |   3.624G   |
+|    layer5_d.0.conv2.weight  |    (64, 64, 3, 3)      |            |
+|   layer5_d.0.bn2            |   0.128K               |   12.583M  |
+|    layer5_d.0.bn2.weight    |    (64,)               |            |
+|    layer5_d.0.bn2.bias      |    (64,)               |            |
+|   layer5_d.0.conv3          |   8.192K               |   0.805G   |
+|    layer5_d.0.conv3.weight  |    (128, 64, 1, 1)     |            |
+|   layer5_d.0.bn3            |   0.256K               |   25.166M  |
+|    layer5_d.0.bn3.weight    |    (128,)              |            |
+|    layer5_d.0.bn3.bias      |    (128,)              |            |
+|   layer5_d.0.downsample     |   8.448K               |   0.83G    |
+|    layer5_d.0.downsample.0  |    8.192K              |    0.805G  |
+|    layer5_d.0.downsample.1  |    0.256K              |    25.166M |
+|  seghead_p                  |  75.015K               |            |
+|   seghead_p.bn1             |   0.128K               |            |
+|    seghead_p.bn1.weight     |    (64,)               |            |
+|    seghead_p.bn1.bias       |    (64,)               |            |
+|   seghead_p.conv1           |   73.728K              |            |
+|    seghead_p.conv1.weight   |    (128, 64, 3, 3)     |            |
+|   seghead_p.bn2             |   0.256K               |            |
+|    seghead_p.bn2.weight     |    (128,)              |            |
+|    seghead_p.bn2.bias       |    (128,)              |            |
+|   seghead_p.conv2           |   0.903K               |            |
+|    seghead_p.conv2.weight   |    (7, 128, 1, 1)      |            |
+|    seghead_p.conv2.bias     |    (7,)                |            |
+|  seghead_d                  |  18.657K               |            |
+|   seghead_d.bn1             |   0.128K               |            |
+|    seghead_d.bn1.weight     |    (64,)               |            |
+|    seghead_d.bn1.bias       |    (64,)               |            |
+|   seghead_d.conv1           |   18.432K              |            |
+|    seghead_d.conv1.weight   |    (32, 64, 3, 3)      |            |
+|   seghead_d.bn2             |   64                   |            |
+|    seghead_d.bn2.weight     |    (32,)               |            |
+|    seghead_d.bn2.bias       |    (32,)               |            |
+|   seghead_d.conv2           |   33                   |            |
+|    seghead_d.conv2.weight   |    (1, 32, 1, 1)       |            |
+|    seghead_d.conv2.bias     |    (1,)                |            |
+|  final_layer                |  0.149M                |  14.634G   |
+|   final_layer.bn1           |   0.256K               |   25.166M  |
+|    final_layer.bn1.weight   |    (128,)              |            |
+|    final_layer.bn1.bias     |    (128,)              |            |
+|   final_layer.conv1         |   0.147M               |   14.496G  |
+|    final_layer.conv1.weight |    (128, 128, 3, 3)    |            |
+|   final_layer.bn2           |   0.256K               |   25.166M  |
+|    final_layer.bn2.weight   |    (128,)              |            |
+|    final_layer.bn2.bias     |    (128,)              |            |
+|   final_layer.conv2         |   0.903K               |   88.08M   |
+|    final_layer.conv2.weight |    (7, 128, 1, 1)      |            |
+|    final_layer.conv2.bias   |    (7,)                |            |
+
+Mean Intersection over Union on test images: 32.341 %
+	BACKGROUND IoU: 31.557 %
+	BUILDING IoU: 34.046 %
+	ROAD IoU: 49.338 %
+	WATER IoU: 51.275 %
+	BARREN IoU: 16.721 %
+	FOREST IoU: 39.206 %
+	AGRICULTURE IoU: 4.240 %
+
+Mean inference time: 5.264 ms
+Standard deviation of inference time: 2.340 ms
+
+________________________________________________________________________________________________________________________
+Resumed
+
+Model test file: last_1.pt
+Device: cuda
+Cuda device name: Tesla T4
+Dataset target domain: Rural
+
+Testing:
+Time: 00:01:35 s 		Test miou: 0.1604 
+
+Model parameters and FLOPs:
+| module                      | #parameters or shape   | #flops     |
+|:----------------------------|:-----------------------|:-----------|
+| model                       | 7.718M                 | 0.142T     |
+|  conv1                      |  10.272K               |  5.109G    |
+|   conv1.0                   |   0.896K               |   1.359G   |
+|    conv1.0.weight           |    (32, 3, 3, 3)       |            |
+|    conv1.0.bias             |    (32,)               |            |
+|   conv1.1                   |   64                   |   0.101G   |
+|    conv1.1.weight           |    (32,)               |            |
+|    conv1.1.bias             |    (32,)               |            |
+|   conv1.3                   |   9.248K               |   3.624G   |
+|    conv1.3.weight           |    (32, 32, 3, 3)      |            |
+|    conv1.3.bias             |    (32,)               |            |
+|   conv1.4                   |   64                   |   25.166M  |
+|    conv1.4.weight           |    (32,)               |            |
+|    conv1.4.bias             |    (32,)               |            |
+|  layer1                     |  37.12K                |  14.596G   |
+|   layer1.0                  |   18.56K               |   7.298G   |
+|    layer1.0.conv1           |    9.216K              |    3.624G  |
+|    layer1.0.bn1             |    64                  |    25.166M |
+|    layer1.0.conv2           |    9.216K              |    3.624G  |
+|    layer1.0.bn2             |    64                  |    25.166M |
+|   layer1.1                  |   18.56K               |   7.298G   |
+|    layer1.1.conv1           |    9.216K              |    3.624G  |
+|    layer1.1.bn1             |    64                  |    25.166M |
+|    layer1.1.conv2           |    9.216K              |    3.624G  |
+|    layer1.1.bn2             |    64                  |    25.166M |
+|  layer2                     |  0.132M                |  12.948G   |
+|   layer2.0                  |   57.728K              |   5.675G   |
+|    layer2.0.conv1           |    18.432K             |    1.812G  |
+|    layer2.0.bn1             |    0.128K              |    12.583M |
+|    layer2.0.conv2           |    36.864K             |    3.624G  |
+|    layer2.0.bn2             |    0.128K              |    12.583M |
+|    layer2.0.downsample      |    2.176K              |    0.214G  |
+|   layer2.1                  |   73.984K              |   7.273G   |
+|    layer2.1.conv1           |    36.864K             |    3.624G  |
+|    layer2.1.bn1             |    0.128K              |    12.583M |
+|    layer2.1.conv2           |    36.864K             |    3.624G  |
+|    layer2.1.bn2             |    0.128K              |    12.583M |
+|  layer3                     |  0.821M                |  20.177G   |
+|   layer3.0                  |   0.23M                |   5.656G   |
+|    layer3.0.conv1           |    73.728K             |    1.812G  |
+|    layer3.0.bn1             |    0.256K              |    6.291M  |
+|    layer3.0.conv2           |    0.147M              |    3.624G  |
+|    layer3.0.bn2             |    0.256K              |    6.291M  |
+|    layer3.0.downsample      |    8.448K              |    0.208G  |
+|   layer3.1                  |   0.295M               |   7.26G    |
+|    layer3.1.conv1           |    0.147M              |    3.624G  |
+|    layer3.1.bn1             |    0.256K              |    6.291M  |
+|    layer3.1.conv2           |    0.147M              |    3.624G  |
+|    layer3.1.bn2             |    0.256K              |    6.291M  |
+|   layer3.2                  |   0.295M               |   7.26G    |
+|    layer3.2.conv1           |    0.147M              |    3.624G  |
+|    layer3.2.bn1             |    0.256K              |    6.291M  |
+|    layer3.2.conv2           |    0.147M              |    3.624G  |
+|    layer3.2.bn2             |    0.256K              |    6.291M  |
+|  layer4                     |  3.28M                 |  20.155G   |
+|   layer4.0                  |   0.919M               |   5.647G   |
+|    layer4.0.conv1           |    0.295M              |    1.812G  |
+|    layer4.0.bn1             |    0.512K              |    3.146M  |
+|    layer4.0.conv2           |    0.59M               |    3.624G  |
+|    layer4.0.bn2             |    0.512K              |    3.146M  |
+|    layer4.0.downsample      |    33.28K              |    0.204G  |
+|   layer4.1                  |   1.181M               |   7.254G   |
+|    layer4.1.conv1           |    0.59M               |    3.624G  |
+|    layer4.1.bn1             |    0.512K              |    3.146M  |
+|    layer4.1.conv2           |    0.59M               |    3.624G  |
+|    layer4.1.bn2             |    0.512K              |    3.146M  |
+|   layer4.2                  |   1.181M               |   7.254G   |
+|    layer4.2.conv1           |    0.59M               |    3.624G  |
+|    layer4.2.bn1             |    0.512K              |    3.146M  |
+|    layer4.2.conv2           |    0.59M               |    3.624G  |
+|    layer4.2.bn2             |    0.512K              |    3.146M  |
+|  layer5                     |  1.775M                |  3.03G     |
+|   layer5.0                  |   0.921M               |   1.718G   |
+|    layer5.0.conv1           |    65.536K             |    0.403G  |
+|    layer5.0.bn1             |    0.512K              |    3.146M  |
+|    layer5.0.conv2           |    0.59M               |    0.906G  |
+|    layer5.0.bn2             |    0.512K              |    0.786M  |
+|    layer5.0.conv3           |    0.131M              |    0.201G  |
+|    layer5.0.bn3             |    1.024K              |    1.573M  |
+|    layer5.0.downsample      |    0.132M              |    0.203G  |
+|   layer5.1                  |   0.854M               |   1.312G   |
+|    layer5.1.conv1           |    0.131M              |    0.201G  |
+|    layer5.1.bn1             |    0.512K              |    0.786M  |
+|    layer5.1.conv2           |    0.59M               |    0.906G  |
+|    layer5.1.bn2             |    0.512K              |    0.786M  |
+|    layer5.1.conv3           |    0.131M              |    0.201G  |
+|    layer5.1.bn3             |    1.024K              |    1.573M  |
+|  compression3               |  8.32K                 |  0.204G    |
+|   compression3.0            |   8.192K               |   0.201G   |
+|    compression3.0.weight    |    (64, 128, 1, 1)     |            |
+|   compression3.1            |   0.128K               |   3.146M   |
+|    compression3.1.weight    |    (64,)               |            |
+|    compression3.1.bias      |    (64,)               |            |
+|  compression4               |  16.512K               |  0.101G    |
+|   compression4.0            |   16.384K              |   0.101G   |
+|    compression4.0.weight    |    (64, 256, 1, 1)     |            |
+|   compression4.1            |   0.128K               |   0.786M   |
+|    compression4.1.weight    |    (64,)               |            |
+|    compression4.1.bias      |    (64,)               |            |
+|  pag3                       |  4.224K                |  0.297G    |
+|   pag3.f_x                  |   2.112K               |   0.208G   |
+|    pag3.f_x.0               |    2.048K              |    0.201G  |
+|    pag3.f_x.1               |    64                  |    6.291M  |
+|   pag3.f_y                  |   2.112K               |   51.905M  |
+|    pag3.f_y.0               |    2.048K              |    50.332M |
+|    pag3.f_y.1               |    64                  |    1.573M  |
+|  pag4                       |  4.224K                |  0.258G    |
+|   pag4.f_x                  |   2.112K               |   0.208G   |
+|    pag4.f_x.0               |    2.048K              |    0.201G  |
+|    pag4.f_x.1               |    64                  |    6.291M  |
+|   pag4.f_y                  |   2.112K               |   12.976M  |
+|    pag4.f_y.0               |    2.048K              |    12.583M |
+|    pag4.f_y.1               |    64                  |    0.393M  |
+|  layer3_                    |  0.148M                |  14.546G   |
+|   layer3_.0                 |   73.984K              |   7.273G   |
+|    layer3_.0.conv1          |    36.864K             |    3.624G  |
+|    layer3_.0.bn1            |    0.128K              |    12.583M |
+|    layer3_.0.conv2          |    36.864K             |    3.624G  |
+|    layer3_.0.bn2            |    0.128K              |    12.583M |
+|   layer3_.1                 |   73.984K              |   7.273G   |
+|    layer3_.1.conv1          |    36.864K             |    3.624G  |
+|    layer3_.1.bn1            |    0.128K              |    12.583M |
+|    layer3_.1.conv2          |    36.864K             |    3.624G  |
+|    layer3_.1.bn2            |    0.128K              |    12.583M |
+|  layer4_                    |  0.148M                |  14.546G   |
+|   layer4_.0                 |   73.984K              |   7.273G   |
+|    layer4_.0.conv1          |    36.864K             |    3.624G  |
+|    layer4_.0.bn1            |    0.128K              |    12.583M |
+|    layer4_.0.conv2          |    36.864K             |    3.624G  |
+|    layer4_.0.bn2            |    0.128K              |    12.583M |
+|   layer4_.1                 |   73.984K              |   7.273G   |
+|    layer4_.1.conv1          |    36.864K             |    3.624G  |
+|    layer4_.1.bn1            |    0.128K              |    12.583M |
+|    layer4_.1.conv2          |    36.864K             |    3.624G  |
+|    layer4_.1.bn2            |    0.128K              |    12.583M |
+|  layer5_.0                  |  58.112K               |  5.713G    |
+|   layer5_.0.conv1           |   4.096K               |   0.403G   |
+|    layer5_.0.conv1.weight   |    (64, 64, 1, 1)      |            |
+|   layer5_.0.bn1             |   0.128K               |   12.583M  |
+|    layer5_.0.bn1.weight     |    (64,)               |            |
+|    layer5_.0.bn1.bias       |    (64,)               |            |
+|   layer5_.0.conv2           |   36.864K              |   3.624G   |
+|    layer5_.0.conv2.weight   |    (64, 64, 3, 3)      |            |
+|   layer5_.0.bn2             |   0.128K               |   12.583M  |
+|    layer5_.0.bn2.weight     |    (64,)               |            |
+|    layer5_.0.bn2.bias       |    (64,)               |            |
+|   layer5_.0.conv3           |   8.192K               |   0.805G   |
+|    layer5_.0.conv3.weight   |    (128, 64, 1, 1)     |            |
+|   layer5_.0.bn3             |   0.256K               |   25.166M  |
+|    layer5_.0.bn3.weight     |    (128,)              |            |
+|    layer5_.0.bn3.bias       |    (128,)              |            |
+|   layer5_.0.downsample      |   8.448K               |   0.83G    |
+|    layer5_.0.downsample.0   |    8.192K              |    0.805G  |
+|    layer5_.0.downsample.1   |    0.256K              |    25.166M |
+|  layer3_d                   |  29.888K               |  2.938G    |
+|   layer3_d.conv1            |   18.432K              |   1.812G   |
+|    layer3_d.conv1.weight    |    (32, 64, 3, 3)      |            |
+|   layer3_d.bn1              |   64                   |   6.291M   |
+|    layer3_d.bn1.weight      |    (32,)               |            |
+|    layer3_d.bn1.bias        |    (32,)               |            |
+|   layer3_d.conv2            |   9.216K               |   0.906G   |
+|    layer3_d.conv2.weight    |    (32, 32, 3, 3)      |            |
+|   layer3_d.bn2              |   64                   |   6.291M   |
+|    layer3_d.bn2.weight      |    (32,)               |            |
+|    layer3_d.bn2.bias        |    (32,)               |            |
+|   layer3_d.downsample       |   2.112K               |   0.208G   |
+|    layer3_d.downsample.0    |    2.048K              |    0.201G  |
+|    layer3_d.downsample.1    |    64                  |    6.291M  |
+|  layer4_d.0                 |  14.72K                |  1.447G    |
+|   layer4_d.0.conv1          |   1.024K               |   0.101G   |
+|    layer4_d.0.conv1.weight  |    (32, 32, 1, 1)      |            |
+|   layer4_d.0.bn1            |   64                   |   6.291M   |
+|    layer4_d.0.bn1.weight    |    (32,)               |            |
+|    layer4_d.0.bn1.bias      |    (32,)               |            |
+|   layer4_d.0.conv2          |   9.216K               |   0.906G   |
+|    layer4_d.0.conv2.weight  |    (32, 32, 3, 3)      |            |
+|   layer4_d.0.bn2            |   64                   |   6.291M   |
+|    layer4_d.0.bn2.weight    |    (32,)               |            |
+|    layer4_d.0.bn2.bias      |    (32,)               |            |
+|   layer4_d.0.conv3          |   2.048K               |   0.201G   |
+|    layer4_d.0.conv3.weight  |    (64, 32, 1, 1)      |            |
+|   layer4_d.0.bn3            |   0.128K               |   12.583M  |
+|    layer4_d.0.bn3.weight    |    (64,)               |            |
+|    layer4_d.0.bn3.bias      |    (64,)               |            |
+|   layer4_d.0.downsample     |   2.176K               |   0.214G   |
+|    layer4_d.0.downsample.0  |    2.048K              |    0.201G  |
+|    layer4_d.0.downsample.1  |    0.128K              |    12.583M |
+|  diff3                      |  36.928K               |  0.908G    |
+|   diff3.0                   |   36.864K              |   0.906G   |
+|    diff3.0.weight           |    (32, 128, 3, 3)     |            |
+|   diff3.1                   |   64                   |   1.573M   |
+|    diff3.1.weight           |    (32,)               |            |
+|    diff3.1.bias             |    (32,)               |            |
+|  diff4                      |  0.148M                |  0.907G    |
+|   diff4.0                   |   0.147M               |   0.906G   |
+|    diff4.0.weight           |    (64, 256, 3, 3)     |            |
+|   diff4.1                   |   0.128K               |   0.786M   |
+|    diff4.1.weight           |    (64,)               |            |
+|    diff4.1.bias             |    (64,)               |            |
+|  spp                        |  0.712M                |  0.815G    |
+|   spp.scale1                |   50.176K              |   19.268M  |
+|    spp.scale1.1             |    1.024K              |    0.393M  |
+|    spp.scale1.3             |    49.152K             |    18.874M |
+|   spp.scale2                |   50.176K              |   4.817M   |
+|    spp.scale2.1             |    1.024K              |    98.304K |
+|    spp.scale2.3             |    49.152K             |    4.719M  |
+|   spp.scale3                |   50.176K              |   1.204M   |
+|    spp.scale3.1             |    1.024K              |    24.576K |
+|    spp.scale3.3             |    49.152K             |    1.18M   |
+|   spp.scale4                |   50.176K              |   1.087M   |
+|    spp.scale4.1             |    1.024K              |    6.144K  |
+|    spp.scale4.3             |    49.152K             |    0.295M  |
+|    spp.scale4.0             |                        |    0.786M  |
+|   spp.scale0                |   50.176K              |   77.07M   |
+|    spp.scale0.0             |    1.024K              |    1.573M  |
+|    spp.scale0.2             |    49.152K             |    75.497M |
+|   spp.scale_process         |   0.333M               |   0.511G   |
+|    spp.scale_process.0      |    0.768K              |    1.18M   |
+|    spp.scale_process.2      |    0.332M              |    0.51G   |
+|   spp.compression           |   62.4K                |   95.846M  |
+|    spp.compression.0        |    0.96K               |    1.475M  |
+|    spp.compression.2        |    61.44K              |    94.372M |
+|   spp.shortcut              |   66.56K               |   0.102G   |
+|    spp.shortcut.0           |    1.024K              |    1.573M  |
+|    spp.shortcut.2           |    65.536K             |    0.101G  |
+|  dfm                        |  33.28K                |  3.272G    |
+|   dfm.conv_p                |   16.64K               |   1.636G   |
+|    dfm.conv_p.0             |    16.384K             |    1.611G  |
+|    dfm.conv_p.1             |    0.256K              |    25.166M |
+|   dfm.conv_i                |   16.64K               |   1.636G   |
+|    dfm.conv_i.0             |    16.384K             |    1.611G  |
+|    dfm.conv_i.1             |    0.256K              |    25.166M |
+|  layer5_d.0                 |  58.112K               |  5.713G    |
+|   layer5_d.0.conv1          |   4.096K               |   0.403G   |
+|    layer5_d.0.conv1.weight  |    (64, 64, 1, 1)      |            |
+|   layer5_d.0.bn1            |   0.128K               |   12.583M  |
+|    layer5_d.0.bn1.weight    |    (64,)               |            |
+|    layer5_d.0.bn1.bias      |    (64,)               |            |
+|   layer5_d.0.conv2          |   36.864K              |   3.624G   |
+|    layer5_d.0.conv2.weight  |    (64, 64, 3, 3)      |            |
+|   layer5_d.0.bn2            |   0.128K               |   12.583M  |
+|    layer5_d.0.bn2.weight    |    (64,)               |            |
+|    layer5_d.0.bn2.bias      |    (64,)               |            |
+|   layer5_d.0.conv3          |   8.192K               |   0.805G   |
+|    layer5_d.0.conv3.weight  |    (128, 64, 1, 1)     |            |
+|   layer5_d.0.bn3            |   0.256K               |   25.166M  |
+|    layer5_d.0.bn3.weight    |    (128,)              |            |
+|    layer5_d.0.bn3.bias      |    (128,)              |            |
+|   layer5_d.0.downsample     |   8.448K               |   0.83G    |
+|    layer5_d.0.downsample.0  |    8.192K              |    0.805G  |
+|    layer5_d.0.downsample.1  |    0.256K              |    25.166M |
+|  seghead_p                  |  75.015K               |            |
+|   seghead_p.bn1             |   0.128K               |            |
+|    seghead_p.bn1.weight     |    (64,)               |            |
+|    seghead_p.bn1.bias       |    (64,)               |            |
+|   seghead_p.conv1           |   73.728K              |            |
+|    seghead_p.conv1.weight   |    (128, 64, 3, 3)     |            |
+|   seghead_p.bn2             |   0.256K               |            |
+|    seghead_p.bn2.weight     |    (128,)              |            |
+|    seghead_p.bn2.bias       |    (128,)              |            |
+|   seghead_p.conv2           |   0.903K               |            |
+|    seghead_p.conv2.weight   |    (7, 128, 1, 1)      |            |
+|    seghead_p.conv2.bias     |    (7,)                |            |
+|  seghead_d                  |  18.657K               |            |
+|   seghead_d.bn1             |   0.128K               |            |
+|    seghead_d.bn1.weight     |    (64,)               |            |
+|    seghead_d.bn1.bias       |    (64,)               |            |
+|   seghead_d.conv1           |   18.432K              |            |
+|    seghead_d.conv1.weight   |    (32, 64, 3, 3)      |            |
+|   seghead_d.bn2             |   64                   |            |
+|    seghead_d.bn2.weight     |    (32,)               |            |
+|    seghead_d.bn2.bias       |    (32,)               |            |
+|   seghead_d.conv2           |   33                   |            |
+|    seghead_d.conv2.weight   |    (1, 32, 1, 1)       |            |
+|    seghead_d.conv2.bias     |    (1,)                |            |
+|  final_layer                |  0.149M                |  14.634G   |
+|   final_layer.bn1           |   0.256K               |   25.166M  |
+|    final_layer.bn1.weight   |    (128,)              |            |
+|    final_layer.bn1.bias     |    (128,)              |            |
+|   final_layer.conv1         |   0.147M               |   14.496G  |
+|    final_layer.conv1.weight |    (128, 128, 3, 3)    |            |
+|   final_layer.bn2           |   0.256K               |   25.166M  |
+|    final_layer.bn2.weight   |    (128,)              |            |
+|    final_layer.bn2.bias     |    (128,)              |            |
+|   final_layer.conv2         |   0.903K               |   88.08M   |
+|    final_layer.conv2.weight |    (7, 128, 1, 1)      |            |
+|    final_layer.conv2.bias   |    (7,)                |            |
+
+Mean Intersection over Union on test images: 16.039 %
+	BACKGROUND IoU: 46.744 %
+	BUILDING IoU: 16.994 %
+	ROAD IoU: 15.387 %
+	WATER IoU: 19.378 %
+	BARREN IoU: 4.745 %
+	FOREST IoU: 1.583 %
+	AGRICULTURE IoU: 7.302 %
+
+Mean inference time: 5.141 ms
+Standard deviation of inference time: 3.865 ms
+
+________________________________________________________________________________________________________________________
+Resumed
+
+Model test file: best_0.pt
+Device: cuda
+Cuda device name: Tesla T4
+Dataset target domain: Rural
+
+Testing:
+Time: 00:01:26 s 		Test miou: 0.1477 
+
+Model parameters and FLOPs:
+| module                      | #parameters or shape   | #flops     |
+|:----------------------------|:-----------------------|:-----------|
+| model                       | 7.718M                 | 0.142T     |
+|  conv1                      |  10.272K               |  5.109G    |
+|   conv1.0                   |   0.896K               |   1.359G   |
+|    conv1.0.weight           |    (32, 3, 3, 3)       |            |
+|    conv1.0.bias             |    (32,)               |            |
+|   conv1.1                   |   64                   |   0.101G   |
+|    conv1.1.weight           |    (32,)               |            |
+|    conv1.1.bias             |    (32,)               |            |
+|   conv1.3                   |   9.248K               |   3.624G   |
+|    conv1.3.weight           |    (32, 32, 3, 3)      |            |
+|    conv1.3.bias             |    (32,)               |            |
+|   conv1.4                   |   64                   |   25.166M  |
+|    conv1.4.weight           |    (32,)               |            |
+|    conv1.4.bias             |    (32,)               |            |
+|  layer1                     |  37.12K                |  14.596G   |
+|   layer1.0                  |   18.56K               |   7.298G   |
+|    layer1.0.conv1           |    9.216K              |    3.624G  |
+|    layer1.0.bn1             |    64                  |    25.166M |
+|    layer1.0.conv2           |    9.216K              |    3.624G  |
+|    layer1.0.bn2             |    64                  |    25.166M |
+|   layer1.1                  |   18.56K               |   7.298G   |
+|    layer1.1.conv1           |    9.216K              |    3.624G  |
+|    layer1.1.bn1             |    64                  |    25.166M |
+|    layer1.1.conv2           |    9.216K              |    3.624G  |
+|    layer1.1.bn2             |    64                  |    25.166M |
+|  layer2                     |  0.132M                |  12.948G   |
+|   layer2.0                  |   57.728K              |   5.675G   |
+|    layer2.0.conv1           |    18.432K             |    1.812G  |
+|    layer2.0.bn1             |    0.128K              |    12.583M |
+|    layer2.0.conv2           |    36.864K             |    3.624G  |
+|    layer2.0.bn2             |    0.128K              |    12.583M |
+|    layer2.0.downsample      |    2.176K              |    0.214G  |
+|   layer2.1                  |   73.984K              |   7.273G   |
+|    layer2.1.conv1           |    36.864K             |    3.624G  |
+|    layer2.1.bn1             |    0.128K              |    12.583M |
+|    layer2.1.conv2           |    36.864K             |    3.624G  |
+|    layer2.1.bn2             |    0.128K              |    12.583M |
+|  layer3                     |  0.821M                |  20.177G   |
+|   layer3.0                  |   0.23M                |   5.656G   |
+|    layer3.0.conv1           |    73.728K             |    1.812G  |
+|    layer3.0.bn1             |    0.256K              |    6.291M  |
+|    layer3.0.conv2           |    0.147M              |    3.624G  |
+|    layer3.0.bn2             |    0.256K              |    6.291M  |
+|    layer3.0.downsample      |    8.448K              |    0.208G  |
+|   layer3.1                  |   0.295M               |   7.26G    |
+|    layer3.1.conv1           |    0.147M              |    3.624G  |
+|    layer3.1.bn1             |    0.256K              |    6.291M  |
+|    layer3.1.conv2           |    0.147M              |    3.624G  |
+|    layer3.1.bn2             |    0.256K              |    6.291M  |
+|   layer3.2                  |   0.295M               |   7.26G    |
+|    layer3.2.conv1           |    0.147M              |    3.624G  |
+|    layer3.2.bn1             |    0.256K              |    6.291M  |
+|    layer3.2.conv2           |    0.147M              |    3.624G  |
+|    layer3.2.bn2             |    0.256K              |    6.291M  |
+|  layer4                     |  3.28M                 |  20.155G   |
+|   layer4.0                  |   0.919M               |   5.647G   |
+|    layer4.0.conv1           |    0.295M              |    1.812G  |
+|    layer4.0.bn1             |    0.512K              |    3.146M  |
+|    layer4.0.conv2           |    0.59M               |    3.624G  |
+|    layer4.0.bn2             |    0.512K              |    3.146M  |
+|    layer4.0.downsample      |    33.28K              |    0.204G  |
+|   layer4.1                  |   1.181M               |   7.254G   |
+|    layer4.1.conv1           |    0.59M               |    3.624G  |
+|    layer4.1.bn1             |    0.512K              |    3.146M  |
+|    layer4.1.conv2           |    0.59M               |    3.624G  |
+|    layer4.1.bn2             |    0.512K              |    3.146M  |
+|   layer4.2                  |   1.181M               |   7.254G   |
+|    layer4.2.conv1           |    0.59M               |    3.624G  |
+|    layer4.2.bn1             |    0.512K              |    3.146M  |
+|    layer4.2.conv2           |    0.59M               |    3.624G  |
+|    layer4.2.bn2             |    0.512K              |    3.146M  |
+|  layer5                     |  1.775M                |  3.03G     |
+|   layer5.0                  |   0.921M               |   1.718G   |
+|    layer5.0.conv1           |    65.536K             |    0.403G  |
+|    layer5.0.bn1             |    0.512K              |    3.146M  |
+|    layer5.0.conv2           |    0.59M               |    0.906G  |
+|    layer5.0.bn2             |    0.512K              |    0.786M  |
+|    layer5.0.conv3           |    0.131M              |    0.201G  |
+|    layer5.0.bn3             |    1.024K              |    1.573M  |
+|    layer5.0.downsample      |    0.132M              |    0.203G  |
+|   layer5.1                  |   0.854M               |   1.312G   |
+|    layer5.1.conv1           |    0.131M              |    0.201G  |
+|    layer5.1.bn1             |    0.512K              |    0.786M  |
+|    layer5.1.conv2           |    0.59M               |    0.906G  |
+|    layer5.1.bn2             |    0.512K              |    0.786M  |
+|    layer5.1.conv3           |    0.131M              |    0.201G  |
+|    layer5.1.bn3             |    1.024K              |    1.573M  |
+|  compression3               |  8.32K                 |  0.204G    |
+|   compression3.0            |   8.192K               |   0.201G   |
+|    compression3.0.weight    |    (64, 128, 1, 1)     |            |
+|   compression3.1            |   0.128K               |   3.146M   |
+|    compression3.1.weight    |    (64,)               |            |
+|    compression3.1.bias      |    (64,)               |            |
+|  compression4               |  16.512K               |  0.101G    |
+|   compression4.0            |   16.384K              |   0.101G   |
+|    compression4.0.weight    |    (64, 256, 1, 1)     |            |
+|   compression4.1            |   0.128K               |   0.786M   |
+|    compression4.1.weight    |    (64,)               |            |
+|    compression4.1.bias      |    (64,)               |            |
+|  pag3                       |  4.224K                |  0.297G    |
+|   pag3.f_x                  |   2.112K               |   0.208G   |
+|    pag3.f_x.0               |    2.048K              |    0.201G  |
+|    pag3.f_x.1               |    64                  |    6.291M  |
+|   pag3.f_y                  |   2.112K               |   51.905M  |
+|    pag3.f_y.0               |    2.048K              |    50.332M |
+|    pag3.f_y.1               |    64                  |    1.573M  |
+|  pag4                       |  4.224K                |  0.258G    |
+|   pag4.f_x                  |   2.112K               |   0.208G   |
+|    pag4.f_x.0               |    2.048K              |    0.201G  |
+|    pag4.f_x.1               |    64                  |    6.291M  |
+|   pag4.f_y                  |   2.112K               |   12.976M  |
+|    pag4.f_y.0               |    2.048K              |    12.583M |
+|    pag4.f_y.1               |    64                  |    0.393M  |
+|  layer3_                    |  0.148M                |  14.546G   |
+|   layer3_.0                 |   73.984K              |   7.273G   |
+|    layer3_.0.conv1          |    36.864K             |    3.624G  |
+|    layer3_.0.bn1            |    0.128K              |    12.583M |
+|    layer3_.0.conv2          |    36.864K             |    3.624G  |
+|    layer3_.0.bn2            |    0.128K              |    12.583M |
+|   layer3_.1                 |   73.984K              |   7.273G   |
+|    layer3_.1.conv1          |    36.864K             |    3.624G  |
+|    layer3_.1.bn1            |    0.128K              |    12.583M |
+|    layer3_.1.conv2          |    36.864K             |    3.624G  |
+|    layer3_.1.bn2            |    0.128K              |    12.583M |
+|  layer4_                    |  0.148M                |  14.546G   |
+|   layer4_.0                 |   73.984K              |   7.273G   |
+|    layer4_.0.conv1          |    36.864K             |    3.624G  |
+|    layer4_.0.bn1            |    0.128K              |    12.583M |
+|    layer4_.0.conv2          |    36.864K             |    3.624G  |
+|    layer4_.0.bn2            |    0.128K              |    12.583M |
+|   layer4_.1                 |   73.984K              |   7.273G   |
+|    layer4_.1.conv1          |    36.864K             |    3.624G  |
+|    layer4_.1.bn1            |    0.128K              |    12.583M |
+|    layer4_.1.conv2          |    36.864K             |    3.624G  |
+|    layer4_.1.bn2            |    0.128K              |    12.583M |
+|  layer5_.0                  |  58.112K               |  5.713G    |
+|   layer5_.0.conv1           |   4.096K               |   0.403G   |
+|    layer5_.0.conv1.weight   |    (64, 64, 1, 1)      |            |
+|   layer5_.0.bn1             |   0.128K               |   12.583M  |
+|    layer5_.0.bn1.weight     |    (64,)               |            |
+|    layer5_.0.bn1.bias       |    (64,)               |            |
+|   layer5_.0.conv2           |   36.864K              |   3.624G   |
+|    layer5_.0.conv2.weight   |    (64, 64, 3, 3)      |            |
+|   layer5_.0.bn2             |   0.128K               |   12.583M  |
+|    layer5_.0.bn2.weight     |    (64,)               |            |
+|    layer5_.0.bn2.bias       |    (64,)               |            |
+|   layer5_.0.conv3           |   8.192K               |   0.805G   |
+|    layer5_.0.conv3.weight   |    (128, 64, 1, 1)     |            |
+|   layer5_.0.bn3             |   0.256K               |   25.166M  |
+|    layer5_.0.bn3.weight     |    (128,)              |            |
+|    layer5_.0.bn3.bias       |    (128,)              |            |
+|   layer5_.0.downsample      |   8.448K               |   0.83G    |
+|    layer5_.0.downsample.0   |    8.192K              |    0.805G  |
+|    layer5_.0.downsample.1   |    0.256K              |    25.166M |
+|  layer3_d                   |  29.888K               |  2.938G    |
+|   layer3_d.conv1            |   18.432K              |   1.812G   |
+|    layer3_d.conv1.weight    |    (32, 64, 3, 3)      |            |
+|   layer3_d.bn1              |   64                   |   6.291M   |
+|    layer3_d.bn1.weight      |    (32,)               |            |
+|    layer3_d.bn1.bias        |    (32,)               |            |
+|   layer3_d.conv2            |   9.216K               |   0.906G   |
+|    layer3_d.conv2.weight    |    (32, 32, 3, 3)      |            |
+|   layer3_d.bn2              |   64                   |   6.291M   |
+|    layer3_d.bn2.weight      |    (32,)               |            |
+|    layer3_d.bn2.bias        |    (32,)               |            |
+|   layer3_d.downsample       |   2.112K               |   0.208G   |
+|    layer3_d.downsample.0    |    2.048K              |    0.201G  |
+|    layer3_d.downsample.1    |    64                  |    6.291M  |
+|  layer4_d.0                 |  14.72K                |  1.447G    |
+|   layer4_d.0.conv1          |   1.024K               |   0.101G   |
+|    layer4_d.0.conv1.weight  |    (32, 32, 1, 1)      |            |
+|   layer4_d.0.bn1            |   64                   |   6.291M   |
+|    layer4_d.0.bn1.weight    |    (32,)               |            |
+|    layer4_d.0.bn1.bias      |    (32,)               |            |
+|   layer4_d.0.conv2          |   9.216K               |   0.906G   |
+|    layer4_d.0.conv2.weight  |    (32, 32, 3, 3)      |            |
+|   layer4_d.0.bn2            |   64                   |   6.291M   |
+|    layer4_d.0.bn2.weight    |    (32,)               |            |
+|    layer4_d.0.bn2.bias      |    (32,)               |            |
+|   layer4_d.0.conv3          |   2.048K               |   0.201G   |
+|    layer4_d.0.conv3.weight  |    (64, 32, 1, 1)      |            |
+|   layer4_d.0.bn3            |   0.128K               |   12.583M  |
+|    layer4_d.0.bn3.weight    |    (64,)               |            |
+|    layer4_d.0.bn3.bias      |    (64,)               |            |
+|   layer4_d.0.downsample     |   2.176K               |   0.214G   |
+|    layer4_d.0.downsample.0  |    2.048K              |    0.201G  |
+|    layer4_d.0.downsample.1  |    0.128K              |    12.583M |
+|  diff3                      |  36.928K               |  0.908G    |
+|   diff3.0                   |   36.864K              |   0.906G   |
+|    diff3.0.weight           |    (32, 128, 3, 3)     |            |
+|   diff3.1                   |   64                   |   1.573M   |
+|    diff3.1.weight           |    (32,)               |            |
+|    diff3.1.bias             |    (32,)               |            |
+|  diff4                      |  0.148M                |  0.907G    |
+|   diff4.0                   |   0.147M               |   0.906G   |
+|    diff4.0.weight           |    (64, 256, 3, 3)     |            |
+|   diff4.1                   |   0.128K               |   0.786M   |
+|    diff4.1.weight           |    (64,)               |            |
+|    diff4.1.bias             |    (64,)               |            |
+|  spp                        |  0.712M                |  0.815G    |
+|   spp.scale1                |   50.176K              |   19.268M  |
+|    spp.scale1.1             |    1.024K              |    0.393M  |
+|    spp.scale1.3             |    49.152K             |    18.874M |
+|   spp.scale2                |   50.176K              |   4.817M   |
+|    spp.scale2.1             |    1.024K              |    98.304K |
+|    spp.scale2.3             |    49.152K             |    4.719M  |
+|   spp.scale3                |   50.176K              |   1.204M   |
+|    spp.scale3.1             |    1.024K              |    24.576K |
+|    spp.scale3.3             |    49.152K             |    1.18M   |
+|   spp.scale4                |   50.176K              |   1.087M   |
+|    spp.scale4.1             |    1.024K              |    6.144K  |
+|    spp.scale4.3             |    49.152K             |    0.295M  |
+|    spp.scale4.0             |                        |    0.786M  |
+|   spp.scale0                |   50.176K              |   77.07M   |
+|    spp.scale0.0             |    1.024K              |    1.573M  |
+|    spp.scale0.2             |    49.152K             |    75.497M |
+|   spp.scale_process         |   0.333M               |   0.511G   |
+|    spp.scale_process.0      |    0.768K              |    1.18M   |
+|    spp.scale_process.2      |    0.332M              |    0.51G   |
+|   spp.compression           |   62.4K                |   95.846M  |
+|    spp.compression.0        |    0.96K               |    1.475M  |
+|    spp.compression.2        |    61.44K              |    94.372M |
+|   spp.shortcut              |   66.56K               |   0.102G   |
+|    spp.shortcut.0           |    1.024K              |    1.573M  |
+|    spp.shortcut.2           |    65.536K             |    0.101G  |
+|  dfm                        |  33.28K                |  3.272G    |
+|   dfm.conv_p                |   16.64K               |   1.636G   |
+|    dfm.conv_p.0             |    16.384K             |    1.611G  |
+|    dfm.conv_p.1             |    0.256K              |    25.166M |
+|   dfm.conv_i                |   16.64K               |   1.636G   |
+|    dfm.conv_i.0             |    16.384K             |    1.611G  |
+|    dfm.conv_i.1             |    0.256K              |    25.166M |
+|  layer5_d.0                 |  58.112K               |  5.713G    |
+|   layer5_d.0.conv1          |   4.096K               |   0.403G   |
+|    layer5_d.0.conv1.weight  |    (64, 64, 1, 1)      |            |
+|   layer5_d.0.bn1            |   0.128K               |   12.583M  |
+|    layer5_d.0.bn1.weight    |    (64,)               |            |
+|    layer5_d.0.bn1.bias      |    (64,)               |            |
+|   layer5_d.0.conv2          |   36.864K              |   3.624G   |
+|    layer5_d.0.conv2.weight  |    (64, 64, 3, 3)      |            |
+|   layer5_d.0.bn2            |   0.128K               |   12.583M  |
+|    layer5_d.0.bn2.weight    |    (64,)               |            |
+|    layer5_d.0.bn2.bias      |    (64,)               |            |
+|   layer5_d.0.conv3          |   8.192K               |   0.805G   |
+|    layer5_d.0.conv3.weight  |    (128, 64, 1, 1)     |            |
+|   layer5_d.0.bn3            |   0.256K               |   25.166M  |
+|    layer5_d.0.bn3.weight    |    (128,)              |            |
+|    layer5_d.0.bn3.bias      |    (128,)              |            |
+|   layer5_d.0.downsample     |   8.448K               |   0.83G    |
+|    layer5_d.0.downsample.0  |    8.192K              |    0.805G  |
+|    layer5_d.0.downsample.1  |    0.256K              |    25.166M |
+|  seghead_p                  |  75.015K               |            |
+|   seghead_p.bn1             |   0.128K               |            |
+|    seghead_p.bn1.weight     |    (64,)               |            |
+|    seghead_p.bn1.bias       |    (64,)               |            |
+|   seghead_p.conv1           |   73.728K              |            |
+|    seghead_p.conv1.weight   |    (128, 64, 3, 3)     |            |
+|   seghead_p.bn2             |   0.256K               |            |
+|    seghead_p.bn2.weight     |    (128,)              |            |
+|    seghead_p.bn2.bias       |    (128,)              |            |
+|   seghead_p.conv2           |   0.903K               |            |
+|    seghead_p.conv2.weight   |    (7, 128, 1, 1)      |            |
+|    seghead_p.conv2.bias     |    (7,)                |            |
+|  seghead_d                  |  18.657K               |            |
+|   seghead_d.bn1             |   0.128K               |            |
+|    seghead_d.bn1.weight     |    (64,)               |            |
+|    seghead_d.bn1.bias       |    (64,)               |            |
+|   seghead_d.conv1           |   18.432K              |            |
+|    seghead_d.conv1.weight   |    (32, 64, 3, 3)      |            |
+|   seghead_d.bn2             |   64                   |            |
+|    seghead_d.bn2.weight     |    (32,)               |            |
+|    seghead_d.bn2.bias       |    (32,)               |            |
+|   seghead_d.conv2           |   33                   |            |
+|    seghead_d.conv2.weight   |    (1, 32, 1, 1)       |            |
+|    seghead_d.conv2.bias     |    (1,)                |            |
+|  final_layer                |  0.149M                |  14.634G   |
+|   final_layer.bn1           |   0.256K               |   25.166M  |
+|    final_layer.bn1.weight   |    (128,)              |            |
+|    final_layer.bn1.bias     |    (128,)              |            |
+|   final_layer.conv1         |   0.147M               |   14.496G  |
+|    final_layer.conv1.weight |    (128, 128, 3, 3)    |            |
+|   final_layer.bn2           |   0.256K               |   25.166M  |
+|    final_layer.bn2.weight   |    (128,)              |            |
+|    final_layer.bn2.bias     |    (128,)              |            |
+|   final_layer.conv2         |   0.903K               |   88.08M   |
+|    final_layer.conv2.weight |    (7, 128, 1, 1)      |            |
+|    final_layer.conv2.bias   |    (7,)                |            |
+
+Mean Intersection over Union on test images: 14.771 %
+	BACKGROUND IoU: 46.502 %
+	BUILDING IoU: 13.001 %
+	ROAD IoU: 13.561 %
+	WATER IoU: 20.787 %
+	BARREN IoU: 6.103 %
+	FOREST IoU: 1.582 %
+	AGRICULTURE IoU: 1.758 %
+
+Mean inference time: 5.508 ms
+Standard deviation of inference time: 3.237 ms

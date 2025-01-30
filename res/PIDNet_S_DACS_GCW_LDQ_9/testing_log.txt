@@ -1,0 +1,76 @@
+Model test file: last_0.pt
+Device: cuda
+Cuda device name: Tesla T4
+Dataset target domain: Urban
+
+Testing:
+Time: 00:01:03 s 		Test miou: 0.3351 
+
+Mean Intersection over Union on test images: 33.514 %
+	BACKGROUND IoU: 31.237 %
+	BUILDING IoU: 38.027 %
+	ROAD IoU: 50.834 %
+	WATER IoU: 51.326 %
+	BARREN IoU: 20.340 %
+	FOREST IoU: 37.888 %
+	AGRICULTURE IoU: 4.945 %
+
+________________________________________________________________________________________________________________________
+Resumed
+
+Model test file: best_0.pt
+Device: cuda
+Cuda device name: Tesla T4
+Dataset target domain: Urban
+
+Testing:
+Time: 00:01:06 s 		Test miou: 0.3452 
+
+Mean Intersection over Union on test images: 34.523 %
+	BACKGROUND IoU: 30.737 %
+	BUILDING IoU: 41.159 %
+	ROAD IoU: 49.978 %
+	WATER IoU: 52.441 %
+	BARREN IoU: 23.434 %
+	FOREST IoU: 33.786 %
+	AGRICULTURE IoU: 10.128 %
+
+________________________________________________________________________________________________________________________
+Resumed
+
+Model test file: last_0.pt
+Device: cuda
+Cuda device name: Tesla T4
+Dataset target domain: Rural
+
+Testing:
+Time: 00:01:28 s 		Test miou: 0.1954 
+
+Mean Intersection over Union on test images: 19.541 %
+	BACKGROUND IoU: 47.941 %
+	BUILDING IoU: 21.713 %
+	ROAD IoU: 16.701 %
+	WATER IoU: 30.567 %
+	BARREN IoU: 9.859 %
+	FOREST IoU: 2.228 %
+	AGRICULTURE IoU: 7.617 %
+
+________________________________________________________________________________________________________________________
+Resumed
+
+Model test file: best_0.pt
+Device: cuda
+Cuda device name: Tesla T4
+Dataset target domain: Rural
+
+Testing:
+Time: 00:01:27 s 		Test miou: 0.2003 
+
+Mean Intersection over Union on test images: 20.035 %
+	BACKGROUND IoU: 48.006 %
+	BUILDING IoU: 24.680 %
+	ROAD IoU: 17.103 %
+	WATER IoU: 23.191 %
+	BARREN IoU: 12.845 %
+	FOREST IoU: 1.931 %
+	AGRICULTURE IoU: 12.487 %

@@ -1,0 +1,162 @@
+Model: PIDNet_S
+Device: cuda
+Cuda device name: Tesla T4
+Dataset source domain: Urban
+Data augmentation: True
+- ShiftScaleRotate(shift_limit=0.1, scale_limit=0.25, rotate_limit=15, fill=(0, 0, 0), fill_mask=255, p=0.5)
+- GaussianBlur(blur_limit=(3, 7), p=0.5)
+- RandomCrop(width=720, height=720, p=0.5) PadIfNeeded(min_width=size[0], min_height=size[1], fill=(0, 0, 0), fill_mask=255)
+Batch size: 6
+
+Criterion: OhemCrossEntropyLoss
+
+Optimizer:
+SGD (
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0.0005
+)
+
+Scheduler:
+PolynomialLR (
+    lr: 0.001
+    power: 0.9
+)
+
+Epoch 1/20:
+Time: 00:02:46 s 		Learning rate: 0.00100 	Train loss: 4.4799 	Train miou: 0.1945 
+
+Validation:
+Time: 00:01:11 s 		Val loss: 4.5320 	Val miou: 0.2410 
+
+Model saved as best_0.pt
+
+Epoch 2/20:
+Time: 00:02:37 s 		Learning rate: 0.00095 	Train loss: 2.6157 	Train miou: 0.2941 
+
+Validation:
+Time: 00:01:10 s 		Val loss: 4.1909 	Val miou: 0.2950 
+
+Model saved as best_0.pt
+
+Epoch 3/20:
+Time: 00:02:37 s 		Learning rate: 0.00091 	Train loss: 2.4296 	Train miou: 0.3233 
+
+Validation:
+Time: 00:01:07 s 		Val loss: 3.5953 	Val miou: 0.3398 
+
+Model saved as best_0.pt
+
+Epoch 4/20:
+Time: 00:02:36 s 		Learning rate: 0.00086 	Train loss: 2.3118 	Train miou: 0.3479 
+
+Validation:
+Time: 00:01:05 s 		Val loss: 4.0101 	Val miou: 0.3230 
+
+Epoch 5/20:
+Time: 00:02:37 s 		Learning rate: 0.00082 	Train loss: 2.2665 	Train miou: 0.3618 
+
+Validation:
+Time: 00:01:10 s 		Val loss: 3.5807 	Val miou: 0.3625 
+
+Model saved as best_0.pt
+
+Epoch 6/20:
+Time: 00:02:36 s 		Learning rate: 0.00077 	Train loss: 2.2019 	Train miou: 0.3729 
+
+Validation:
+Time: 00:01:07 s 		Val loss: 3.9660 	Val miou: 0.3461 
+
+Epoch 7/20:
+Time: 00:02:36 s 		Learning rate: 0.00073 	Train loss: 2.1529 	Train miou: 0.3903 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.8753 	Val miou: 0.3636 
+
+Model saved as best_0.pt
+
+Epoch 8/20:
+Time: 00:02:36 s 		Learning rate: 0.00068 	Train loss: 2.1172 	Train miou: 0.3969 
+
+Validation:
+Time: 00:01:03 s 		Val loss: 3.7727 	Val miou: 0.3719 
+
+Model saved as best_0.pt
+
+Epoch 9/20:
+Time: 00:02:36 s 		Learning rate: 0.00063 	Train loss: 2.0731 	Train miou: 0.3999 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.9474 	Val miou: 0.3611 
+
+Epoch 10/20:
+Time: 00:02:35 s 		Learning rate: 0.00058 	Train loss: 2.0864 	Train miou: 0.4068 
+
+Validation:
+Time: 00:01:04 s 		Val loss: 3.9966 	Val miou: 0.3535 
+
+Epoch 11/20:
+Time: 00:02:36 s 		Learning rate: 0.00054 	Train loss: 2.0417 	Train miou: 0.4158 
+
+Validation:
+Time: 00:01:04 s 		Val loss: 3.8645 	Val miou: 0.3587 
+
+Epoch 12/20:
+Time: 00:02:35 s 		Learning rate: 0.00049 	Train loss: 2.0593 	Train miou: 0.4138 
+
+Validation:
+Time: 00:01:04 s 		Val loss: 3.7845 	Val miou: 0.3624 
+
+Epoch 13/20:
+Time: 00:02:36 s 		Learning rate: 0.00044 	Train loss: 2.0188 	Train miou: 0.4277 
+
+Validation:
+Time: 00:01:03 s 		Val loss: 3.7430 	Val miou: 0.3804 
+
+Model saved as best_0.pt
+
+Epoch 14/20:
+Time: 00:02:37 s 		Learning rate: 0.00039 	Train loss: 1.9897 	Train miou: 0.4303 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.5986 	Val miou: 0.3853 
+
+Model saved as best_0.pt
+
+Epoch 15/20:
+Time: 00:02:36 s 		Learning rate: 0.00034 	Train loss: 1.9763 	Train miou: 0.4335 
+
+Validation:
+Time: 00:01:09 s 		Val loss: 3.7633 	Val miou: 0.3734 
+
+Epoch 16/20:
+Time: 00:02:36 s 		Learning rate: 0.00029 	Train loss: 1.9769 	Train miou: 0.4366 
+
+Validation:
+Time: 00:01:07 s 		Val loss: 3.8171 	Val miou: 0.3761 
+
+Epoch 17/20:
+Time: 00:02:37 s 		Learning rate: 0.00023 	Train loss: 1.9661 	Train miou: 0.4427 
+
+Validation:
+Time: 00:01:05 s 		Val loss: 3.8943 	Val miou: 0.3696 
+
+Epoch 18/20:
+Time: 00:02:36 s 		Learning rate: 0.00018 	Train loss: 1.9493 	Train miou: 0.4491 
+
+Validation:
+Time: 00:01:04 s 		Val loss: 3.7988 	Val miou: 0.3826 
+
+Epoch 19/20:
+Time: 00:02:35 s 		Learning rate: 0.00013 	Train loss: 1.9588 	Train miou: 0.4470 
+
+Validation:
+Time: 00:01:04 s 		Val loss: 4.0157 	Val miou: 0.3764 
+
+Epoch 20/20:
+Time: 00:02:36 s 		Learning rate: 0.00007 	Train loss: 1.9501 	Train miou: 0.4463 
+
+Validation:
+Time: 00:01:06 s 		Val loss: 3.9149 	Val miou: 0.3699 
+
+Total elapsed time: 01:14:41 s

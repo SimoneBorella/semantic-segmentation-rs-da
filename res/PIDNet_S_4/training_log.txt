@@ -1,0 +1,159 @@
+Model: PIDNet_S
+Device: cuda
+Cuda device name: Tesla T4
+Dataset source domain: Urban
+Data augmentation: True
+- HorizontalFlip(p=0.5)
+- ShiftScaleRotate(shift_limit=0.1, scale_limit=0.25, rotate_limit=15, fill=(0, 0, 0), fill_mask=255, p=0.5)
+Batch size: 6
+
+Criterion: OhemCrossEntropyLoss
+
+Optimizer:
+SGD (
+    lr: 0.001
+    momentum: 0.9
+    weight_decay: 0.0005
+)
+
+Scheduler:
+PolynomialLR (
+    lr: 0.001
+    power: 0.9
+)
+
+Epoch 1/20:
+Time: 00:02:41 s 		Learning rate: 0.00100 	Train loss: 4.3270 	Train miou: 0.2096 
+
+Validation:
+Time: 00:01:10 s 		Val loss: 4.0462 	Val miou: 0.2626 
+
+Model saved as best_0.pt
+
+Epoch 2/20:
+Time: 00:02:33 s 		Learning rate: 0.00095 	Train loss: 2.5834 	Train miou: 0.3012 
+
+Validation:
+Time: 00:01:07 s 		Val loss: 3.5431 	Val miou: 0.3285 
+
+Model saved as best_0.pt
+
+Epoch 3/20:
+Time: 00:02:35 s 		Learning rate: 0.00091 	Train loss: 2.3881 	Train miou: 0.3399 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.6386 	Val miou: 0.3385 
+
+Model saved as best_0.pt
+
+Epoch 4/20:
+Time: 00:02:33 s 		Learning rate: 0.00086 	Train loss: 2.2571 	Train miou: 0.3719 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.8629 	Val miou: 0.3379 
+
+Epoch 5/20:
+Time: 00:02:34 s 		Learning rate: 0.00082 	Train loss: 2.2331 	Train miou: 0.3773 
+
+Validation:
+Time: 00:01:10 s 		Val loss: 3.6903 	Val miou: 0.3638 
+
+Model saved as best_0.pt
+
+Epoch 6/20:
+Time: 00:02:34 s 		Learning rate: 0.00077 	Train loss: 2.1548 	Train miou: 0.3966 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.9064 	Val miou: 0.3558 
+
+Epoch 7/20:
+Time: 00:02:35 s 		Learning rate: 0.00073 	Train loss: 2.1148 	Train miou: 0.4072 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.6346 	Val miou: 0.3854 
+
+Model saved as best_0.pt
+
+Epoch 8/20:
+Time: 00:02:33 s 		Learning rate: 0.00068 	Train loss: 2.0933 	Train miou: 0.4125 
+
+Validation:
+Time: 00:01:06 s 		Val loss: 3.5096 	Val miou: 0.3963 
+
+Model saved as best_0.pt
+
+Epoch 9/20:
+Time: 00:02:32 s 		Learning rate: 0.00063 	Train loss: 2.0434 	Train miou: 0.4188 
+
+Validation:
+Time: 00:01:05 s 		Val loss: 3.7509 	Val miou: 0.3704 
+
+Epoch 10/20:
+Time: 00:02:32 s 		Learning rate: 0.00058 	Train loss: 2.0131 	Train miou: 0.4341 
+
+Validation:
+Time: 00:01:05 s 		Val loss: 3.9591 	Val miou: 0.3587 
+
+Epoch 11/20:
+Time: 00:02:32 s 		Learning rate: 0.00054 	Train loss: 2.0032 	Train miou: 0.4321 
+
+Validation:
+Time: 00:01:04 s 		Val loss: 3.6247 	Val miou: 0.3745 
+
+Epoch 12/20:
+Time: 00:02:33 s 		Learning rate: 0.00049 	Train loss: 2.0052 	Train miou: 0.4365 
+
+Validation:
+Time: 00:01:03 s 		Val loss: 3.6587 	Val miou: 0.3713 
+
+Epoch 13/20:
+Time: 00:02:33 s 		Learning rate: 0.00044 	Train loss: 1.9786 	Train miou: 0.4466 
+
+Validation:
+Time: 00:01:11 s 		Val loss: 3.7193 	Val miou: 0.3826 
+
+Epoch 14/20:
+Time: 00:02:35 s 		Learning rate: 0.00039 	Train loss: 1.9556 	Train miou: 0.4452 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.5428 	Val miou: 0.4038 
+
+Model saved as best_0.pt
+
+Epoch 15/20:
+Time: 00:02:33 s 		Learning rate: 0.00034 	Train loss: 1.9329 	Train miou: 0.4526 
+
+Validation:
+Time: 00:01:03 s 		Val loss: 3.6517 	Val miou: 0.3846 
+
+Epoch 16/20:
+Time: 00:02:32 s 		Learning rate: 0.00029 	Train loss: 1.9317 	Train miou: 0.4535 
+
+Validation:
+Time: 00:01:03 s 		Val loss: 3.6174 	Val miou: 0.3949 
+
+Epoch 17/20:
+Time: 00:02:30 s 		Learning rate: 0.00023 	Train loss: 1.9203 	Train miou: 0.4589 
+
+Validation:
+Time: 00:01:02 s 		Val loss: 3.8535 	Val miou: 0.3857 
+
+Epoch 18/20:
+Time: 00:02:32 s 		Learning rate: 0.00018 	Train loss: 1.9006 	Train miou: 0.4691 
+
+Validation:
+Time: 00:01:07 s 		Val loss: 3.6458 	Val miou: 0.4012 
+
+Epoch 19/20:
+Time: 00:02:31 s 		Learning rate: 0.00013 	Train loss: 1.9164 	Train miou: 0.4633 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.8249 	Val miou: 0.3925 
+
+Epoch 20/20:
+Time: 00:02:30 s 		Learning rate: 0.00007 	Train loss: 1.9081 	Train miou: 0.4663 
+
+Validation:
+Time: 00:01:08 s 		Val loss: 3.7873 	Val miou: 0.3845 
+
+Total elapsed time: 01:13:35 s
