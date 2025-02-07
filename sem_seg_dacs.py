@@ -757,6 +757,22 @@ def train(model, ema_model, model_number, src_trainloader, trg_trainloader, src_
             mixed_boundaries = compute_boundaries(mixed_masks.cpu())
             
 
+
+            # for src_image, trg_image, mixed_image, src_mask, trg_mask, mixed_mask, boundary in zip(src_images, trg_images, mixed_images, src_masks, trg_prediction, mixed_masks, mixed_boundaries):
+            #     plot_mixup(
+            #         src_image.numpy(),
+            #         trg_image.numpy(),
+            #         mixed_image.numpy(),
+            #         src_mask.numpy(),
+            #         trg_mask.numpy(),
+            #         mixed_mask.numpy(),
+            #         np_format=True,
+            #         alpha=1.,
+            #         title="Mixed produced data",
+            #         show=True
+            #     )
+
+
             # for image, mask, boundary in zip(mixed_images, mixed_masks, mixed_boundaries):
             #     plot_dataset_entry(
             #         image.numpy(),
@@ -767,6 +783,11 @@ def train(model, ema_model, model_number, src_trainloader, trg_trainloader, src_
             #         title="Mixed produced data",
             #         show=True
             #     )
+
+
+
+
+
 
 
             mixed_images = mixed_images.to(device)
